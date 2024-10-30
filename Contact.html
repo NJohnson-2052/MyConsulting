@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Nivon Consulting</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <!--  JavaScripts-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('.slider').slider();
+            //$('.slider').slider({fullWidth: true, indicators: false, height: 500, interval: 6000});
+            $('.scrollspy').scrollSpy(); 
+    $('.datepicker').datepicker();
+  });
+          
+        });
+
+    </script>
+</head>
+
+<body id="home">
+
+    <!-- navigation bar -->
+    <nav class="" role="navigation">
+        <div class="nav-wrapper black lighten-1"><a id="logo-container" href="#" class="brand-logo"><i class="large material-icons">code</i>Nivon Consulting</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons menu">menu</i></a>
+        </div>
+        <!--form-->
+    </nav>
+    <div class="container">
+    <div class="row center">
+   <h2> Contact Us</h2>
+</div>
+<!--Form-->
+ <div class="row">
+    <form action="https://formsubmit.co/John2052@miamioh.edu" class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+          <i class="material-icons left">person</i>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Email</label>
+          <i class="material-icons left">mail</i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="phone" type="tel" class="validate">
+          <label for="phone">Telephone</label>
+            <i class="material-icons left">phone</i>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+        <input type="text" class="datepicker">
+          <label for="email">Best Time/Date</label>
+            <i class="material-icons left">date_range</i>
+           
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Test Area</label>
+            <i class="material-icons left">textsms</i>
+        </div>
+      </div>
+       <button class="btn waves-effect waves-light black" type="submit" action="https://formsubmit.co/john2052@miamioh.edu" name="action">Submit
+  </button>
+    </form>
+  </div>
+</div>
